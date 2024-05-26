@@ -1,0 +1,47 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Public/Styles/requireDetails.css" />
+    <title>Registration Form</title>
+  </head>
+
+  <body>
+    <img src="/Public/images/collegeIllustrations/college1.avif" alt="" id="img1" />
+    <div class="main">
+      <div class="register">
+        <h2>Data Searching</h2>
+        <form id="register" action="/Profiles" method="post">
+          <label for="branch">
+            Branch:
+            <select class="barnch" name="branch">
+              <option value="IT">Information technology</option>
+              <option value="CSE">Computer Science and Engineering</option>
+              <option value="Auto Mobile">Auto Mobile</option>
+              <option value="Mechanical">Mechanical Engineering</option>
+              <option value="Electrical">Electrical Engineering</option>
+              <option value="Electronics">Electronics</option>
+              <option value="Civil">Civil</option>
+            </select>
+          </label>
+          <label for="year">
+            Year
+            <select class="year" name="year">
+              <option value="1st">1st Year</option>
+              <option value="2nd">2nd Year</option>
+              <option value="3rd">3rd Year</option>
+            </select>
+          </label>
+
+          <div class="container">
+            <button id="btn-submit">Find</button>
+          </div>
+        </form>
+        <a href="/ProfileSearchGn">According to gender & category </a>
+      </div>
+
+    </div>
+  </body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student List</title>
+    <link rel="stylesheet" href="/Public/Styles/showStudentDetails.css">
+</head>
+<body>
+    <h2>Student List</h2>
+    <table>
+        <thead>
+            <tr>
+                <th >jeep Rank.</th>
+                <th>Student Name</th>
+                <th>Father Name</th>
+                <th>Mother Name</th>
+                <th>DOB</th>
+                <th>Year</th> 
+                <th>1st choice</th>
+                <th>2nd choice</th>
+                <th>3rd choice</th>
+                <th>4th choice</th>
+                <th>Gender</th>
+                <th>Category</th>
+                <th>Mobile No.</th>
+                <th>Email</th>
+                <th>State</th>
+                <th>District</th>
+                <th>Pin Code</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each items}}
+            <tr>
+                <td class="rank">{{this.jeep}}</td>
+                <td class="name">{{this.studentName}}</td>
+                <td>{{this.fatherName}}</td>
+                <td>{{this.motherName}}</td>
+                <td>{{this.dob}}</td>
+                <td>{{this.year}}</td>
+                <td  class="choice1">{{this.firstChoice}}</td>
+                <td  class="choice2">{{this.secondChoice}}</td>
+                <td class="choice3">{{this.thirdChoice}}</td>
+                <td class="choice4">{{this.fourthChoice}}</td>
+                <td class="gen">{{this.gender}}</td>
+                <td class="cat">{{this.category}}</td>
+                <td>{{this.mobileNumber}}</td>
+                <td>{{this.email}}</td>
+                <td>{{this.state}}</td>
+                <td>{{this.district}}</td>
+                <td>{{this.pincode}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</body>
+</html>

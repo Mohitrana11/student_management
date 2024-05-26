@@ -1,0 +1,553 @@
+@font-face {
+    font-family: merriBlack;
+    src: url('/Public/FontFamilys/Merriweather-Black.ttf');
+}
+@font-face {
+    font-family: merriLight;
+    src: url('/Public/FontFamilys/Merriweather-Light.ttf');
+}
+@font-face {
+    font-family: Coffee;
+    src: url('/Public/FontFamilys/CoffeeHealing-1GrKettf');
+}
+
+
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing:border-box ;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: merriLight;
+    background-color: rgba(0, 1, 1, 0.005);
+    background-color: whitesmoke;
+
+}
+
+/*  Circle Button: -- ----------------------------------- */
+
+#circle{
+    position: absolute;
+    z-index: 999;
+    pointer-events: none;
+    width: 22px;
+    height: 22px;
+    background-color: rgba(8, 3, 3, 0.08);
+    border: 2px solid rgba(0, 0, 0, 0.334);
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+/*  main Container: --------------------------------------- */
+
+
+#main{
+    width: 100%;
+    height: 100%;
+    padding: 0px 4%;
+    /* background-color: rgba(0, 255, 255, 0.005); */
+    background-color: whitesmoke;
+}
+
+nav{
+    position: fixed;
+    z-index: 3;
+    top: 0px;
+    width: 92%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#leftSide{
+    display: flex;
+    align-items: center;
+}
+#leftSide img{
+    height: 60px;
+}
+#leftSide .aboutCollege{
+    position: relative; 
+    height: 30px;
+    width: 40vw;
+    overflow-y: hidden;
+}
+#leftSide .aboutCollege h1{
+    position: absolute;
+    font-family: merriLight;
+    font-weight: 200;
+    font-size: 23px;
+}
+
+#rightSide{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* overflow: hidden; */
+    transition: 0.5s ease-in-out;
+}
+
+#rightSide>img{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#rightSide .drop-down-menu{
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+    top: 40px;
+    right: 20px;
+    width: 250px;
+    height:200px;
+    border-radius: 10px;
+    background-color: rgba(163, 238, 238, 0.543);
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    padding: 20px 10px;
+}
+.drop-down-menu>img{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 20px;
+    height: 20px;
+}
+.drop-down-menu .about-user{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: rgb(243, 255, 255);
+    padding: 5px;
+    border-radius: 5px;
+}
+.about-user>img{
+    width: 39px;
+    height: 39px;
+}
+.about-user>h5{
+    margin-left:10px ;
+    font-size: 15px;
+    background-color: rgb(243, 255, 255);
+    text-transform: capitalize;
+}
+
+.about-user:hover{
+    transform: scale(1.01);
+}
+
+.drop-down-menu .editProfile{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: rgb(243, 255, 255);
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.editProfile>img{
+    width: 39px;
+    height: 39px;
+}
+.editProfile>h5{
+    margin-left:10px ;
+    font-size: 15px;
+    background-color: aliceblue;
+    text-transform: capitalize;
+}
+
+.editProfile:hover{
+    transform: scale(1.01);
+}
+
+.drop-down-menu .logOut{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: rgb(243, 255, 255);
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.logOut>img{
+    width: 39px;
+    height: 39px;
+}
+.logOut>h5{
+    margin-left:10px ;
+    font-size: 15px;
+    background-color: aliceblue;
+    text-transform: capitalize;
+}
+
+.logOut:hover{
+    transform: scale(1.01);
+}
+
+
+
+/* Center Container Start: ----------------------  */
+
+.CenterContainer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CollegeInfo h1{
+    position: relative;
+    z-index: 3;
+    width: 50vw;
+    text-align: center;
+    font-size: 9vh;
+    line-height: 6vw;
+    font-family:Coffee;
+    font-weight: 400;
+}
+.CollegeInfo button{
+
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    padding: 5px 14px;
+    font-size: 14px;
+    margin-left:20vw;
+    text-align: center;
+    font-family:merriBlack;
+    font-weight: 400;
+    border-radius: 10px;
+
+}
+.CollegeInfo button:hover{
+    background-color: rgba(172, 255, 47, 0.53);
+}
+
+.CollegeInfo button img{
+    height: 20px;
+    margin-left:12px ;
+}
+.img1{
+    position: absolute;
+    top: 10vw;
+    left: 2vw;
+    width: 300px;
+    height: 207px;
+    border-radius: 15px;
+}
+
+.img3{
+    position: absolute;
+    top: 8vw;
+    right: 5vw;
+    width: 333px;
+    height: 188px;
+    border-radius: 8px;
+}
+ .img2{
+    position: absolute;
+    bottom: 18vh;
+    right: 15vw;
+    border-radius: 10px;
+    width: 302px;
+    height: 114px;
+}
+.CenterContainer img:hover{
+    margin: 10px 0px;
+}
+
+
+/*  Page2: --------------------------------------------- */
+
+.page2{
+    width: 100%;
+    /* height: 50vh; */
+    /* background-color: aqua; */
+}
+.page2>h1{
+    text-align: center;
+    margin:10px 0px ;
+}
+.branch-container{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.branch-box{
+    position: relative;
+    width: 200px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid seagreen;
+    border-radius:10px 10px;
+    margin:30px 40px;
+}
+.branch-box img{
+    width: 100px;
+}
+.branch-box a{
+    position: relative;
+    margin:10px 0px ;
+    text-decoration: none;
+    padding: 8px 35px;
+    border: 2px solid rgb(51, 171, 207);
+    border-radius: 4px;
+    font-weight: 700;
+    font-family: merriBlack;
+    overflow: hidden;
+}
+.branch-box a>h1{
+    font-size: 15px;
+    position: relative;
+    z-index: 4;
+}
+.branch-box a #green{
+    position: absolute;
+    width:  170px;
+    height: 35px;
+    background-color: rgb(16, 176, 72);
+    left: -170px;
+    top: 0px;
+    transition: 0.4s ease-in;
+}
+
+.branch-box a:hover #green{
+    left: 0px;
+}
+
+
+
+/* page1 ----------------------------------  */
+.page1{
+    width: 100%;
+    margin:50px 0px ;
+}
+.page1>h1{
+    text-align: center;
+    margin-top: 90px;
+    text-transform: uppercase;
+}
+.page1>h2{
+    /* text-align: center; */
+    font-size: 23px;
+    position: relative;
+    top: 35px;
+    left: 20px;
+}
+.counsellingContainer{
+    width: 100%;
+    padding: 30px 0px;
+    display: flex;
+    align-content:center ;
+    text-align: center;
+    justify-content: space-center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.counselling-box{
+    width: 200px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: rgba(26, 246, 44, 0.629);
+    margin:20px 25px;
+    color: black;
+    backdrop-filter: blur(10px);
+}
+.counselling-box h5{
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.counselling-box p{
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#counselling-box2{
+    background-color: rgba(77, 150, 140, 0.394);
+}
+#counselling-box2 h4{
+    color: black;
+}
+
+#counselling-box3{
+    background-color: rgba(161, 181, 80, 0.159);
+}
+#counselling-box3 h4{
+    color: black;
+}
+#counselling-box4{
+    background-color: rgba(142, 152, 49, 0.347);
+}
+#counselling-box4 h4{
+    color: rgb(48, 9, 0);
+}
+#counselling-box5{
+    background-color: rgb(207, 141, 26);
+}
+#counselling-box5 h4{
+    color: rgb(20, 45, 146);
+}
+
+.counselling-box h4{
+    /* margin-bottom: 5px ; */
+}
+.counselling-box h3{
+    font-size: 25px;
+    margin: 5px ;
+}
+
+.page-d .counselling-box  a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 16px;
+    font-weight: 800;
+    border: 2px solid rgb(23, 139, 181);
+    background-color: rgba(202, 18, 18, 0.725);
+    padding: 10px 14px;
+    border-radius: 7px;
+    transition: 2s;
+    margin-top: 15px;
+}
+.counselling-box  a img{
+    height: 20px;
+    margin-left: 3px;
+}
+.counselling-box  a:hover{
+    background-color: aqua;
+    color: brown;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* pageD ----------------------------------  */
+.page-d{
+    width: 100%;
+    margin:10px 0px ;
+}
+.page-d>h1{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.counsellingContainer{
+    width: 100%;
+    padding: 30px 0px;
+    display: flex;
+    align-content:center ;
+    text-align: center;
+    justify-content: space-center;
+    flex-wrap: wrap;
+    /* padding: 0px 30px; */
+    margin: 20px;
+}
+.counselling-box{
+    width: 200px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: rgba(26, 246, 44, 0.738);
+    margin:20px 25px;
+    backdrop-filter: blur(10px);
+}
+.counselling-box h4{
+    font-size: 23px;
+}
+.counselling-box p{
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+#counselling-box2{
+    background-color: rgb(27, 224, 198);
+}
+#counselling-box2 h4{
+    color: rgb(4, 2, 2);
+}
+
+#counselling-box3{
+    background-color: rgba(51, 209, 19, 0.777);
+}
+#counselling-box3 h4{
+    color: rgb(16, 19, 98);
+}
+#counselling-box4{
+    background-color: rgba(195, 211, 49, 0.816);
+}
+#counselling-box4 h4{
+    color: rgba(90, 22, 7, 0.327);
+}
+#counselling-box5{
+    background-color: rgb(207, 141, 26);
+}
+
+.counselling-box h4{
+    /* margin-bottom: 5px ; */
+}
+.counselling-box h3{
+    font-size: 25px;
+    margin: 5px ;
+}
+
+.counselling-box  a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 15px;
+    font-weight: 800;
+    border: 2px solid rgb(23, 139, 181);
+    padding: 10px 14px;
+    border-radius: 7px;
+    transition: 2s;
+}
+.counselling-box  a img{
+    height: 20px;
+    margin-left: 3px;
+}
+.counselling-box  a:hover{
+    background-color: aqua;
+    color: brown;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,185 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Government Polytechnic Srinagar (Garhwal)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+    />
+    <link rel="stylesheet" href="/Public/Styles/teacherHomePage.css" />
+  </head>
+  <body>
+    <!-- Circular Button: -->
+    <div id="circle"></div>
+
+    <!-- Main Container: ---------------------------------------------- -->
+    <div id="main">
+      
+      <nav>
+        <div id="leftSide">
+          <img src="/Public/images/SrinagarImages/college_logo.webp" alt="" />
+          <div class="aboutCollege">
+            <h1 class="title1">Government Polytechnic Srinagar</h1>
+          </div>
+        </div>
+        <div id="rightSide">
+          <img
+            src="/Public/images/Icons/user.png"
+            alt=""
+            id="userImg"
+            onclick="toggleMenu()"
+          />
+          <div class="drop-down-menu" id="subMenu">
+            <div class="about-user">
+              <img src="/Public/images/Icons/user.png" alt="" />
+              <h5>User name</h5>
+
+            </div>
+            <div class="editProfile">
+              <img src="/Public/images/Icons/user2.png" alt="" />
+              <h5>Edit Profile</h5>
+            </div>
+            <div class="logOut">
+              <img src="/Public/images/Icons/logout.gif" alt="" />
+              <h5>LogOut</h5>
+            </div>
+            <img src="/Public/images/Icons/cross.png" alt="" onclick="toggleMenu2()" />
+          </div>
+        </div>
+      </nav>
+
+      <div class="page1">
+        <h1>Counselling</h1>  
+        <h2>Applications Forms</h2>
+        <div class="counsellingContainer">
+          <div class="counselling-box">
+            <h5 class="jeepRank">Jeep Students</h5>
+            <p>Applications</p>
+            <!-- <h3>{{totalDocuments }}</h3> -->
+            <a href="/showCounselling">show
+              <img src="/Public/images/Icons/icons8-arrow-32.png" alt="" /></a>
+          </div>
+
+          <div class="counselling-box" id="counselling-box2">
+            <h5>10<sup>th</sup> Pass Students</h5>
+            <p>Applications</p>
+            <!-- <h3>9900</h3> -->
+            <a href="/studentSelection10">show
+              <img src="/Public/images/Icons/icons8-arrow-32.png" alt="" /></a>
+          </div>
+          
+
+          <div class="counselling-box" id="counselling-box3">
+            <h5>12<sup>th</sup>Pass Students</h5>
+            <p>Applications</p>
+            <a href="/studentSelection">show
+              <img src="/Public/images/Icons/icons8-arrow-32.png" alt="" /></a>
+          </div>
+        </div>
+      </div>
+
+   
+      <!-- Download Section!----  -->
+      <div class="page-d">
+        <h1>Download Excel Files</h1>  
+        <div class="counsellingContainer">
+          <div class="counselling-box" id="counselling-box4">
+            <h5>Jeep Students</h5>
+            <a href="/export-counselling">Download
+            <i class="fa-solid fa-download"></i>
+          </a>
+          </div>
+
+          <div class="counselling-box" id="counselling-box5">
+            <h5>12 <sup>th</sup> Pass Students</h5>
+            <a href="/export-counselling12">Download
+            <i class="fa-solid fa-download"></i>
+          </a>
+          </div>
+
+
+          <div class="counselling-box" id="counselling-box6">
+            <h5>10 <sup>th</sup> pass Students</h5>
+            <a href="/export-counselling10">Download
+              <i class="fa-solid fa-download"></i>
+              </a>
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <div class="page2">
+        <h1>Branch</h1>
+        <div class="branch-container">
+          <div class="branch-box">
+            <img src="/Public/images/Icons/it.png" alt="" />
+            <a href="/ProfileSearch" class="branch-btn">
+              <h1>IT</h1>
+              <div id="green"></div>
+            </a>
+          </div>
+          <div class="branch-box">
+            <img src="/Public/images/Icons/CSE.png" alt="" />
+            <a href="/ProfileSearch" class="branch-btn">
+              <h1>CSE</h1>
+              <div id="green"></div>
+            </a>
+          </div>
+          <div class="branch-box">
+            <img src="/Public/images/Icons/mechanical.gif" alt="" />
+            <a href="/ProfileSearch" class="branch-btn">
+              <h1>Mechanical</h1>
+              <div id="green"></div>
+            </a>
+          </div>
+          <div class="branch-box">
+            <img src="/Public/images/Icons/autoMobile.png" alt="" />
+            <a href="/ProfileSearch" class="branch-btn">
+              <h1>Auto Mobile</h1>
+              <div id="green"></div>
+            </a>
+          </div>
+          <div class="branch-box">
+            <img src="/Public/images/Icons/Electonics.gif" alt="" />
+            <a href="/ProfileSearch" class="branch-btn">
+              <h1>Electronics</h1>
+              <div id="green"></div>
+            </a>
+          </div>
+          <div class="branch-box">
+            <img src="/Public/images/Icons/electrical.png" alt="" />
+            <a href="/ProfileSearch" class="branch-btn">
+              <h1>electrical</h1>
+              <div id="green"></div>
+            </a>
+          </div>
+          <div class="branch-box">
+            <img src="/Public/images/Icons/civil.png" alt="" />
+            <a href="/ProfileSearch" class="branch-btn">
+              <h1>Civil</h1>
+              <div id="green"></div>
+            </a>
+          </div>
+          <div class="branch-box">
+            <img src="/Public/images/Icons/pharmacy.png" alt="" />
+            <a href="/ProfileSearch" class="branch-btn">
+              <h1>Pharmacy</h1>
+              <div id="green"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer [Start] -->
+
+    </div>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+  ></script>
+  <script src="/Public/Scripts/teacherHomePage.js"></script>
+</html>

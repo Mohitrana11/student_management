@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: kelvet;
+    src: url('/FontFamilys/KelveticaNobis-A5z6.ttf');
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    padding: 0px 5%;
+    font-family: Poppins;
+    background-color: #68d4b255;
+    background-image: url('/Public/Images/counsellingImage/math-ai.png');
+    background-size: 100%;
+    background-attachment:fixed ;
+}
+
+.main {
+    width: 50vw;
+    height: 110vh;
+    margin: 30px auto;
+    padding: 20px;
+    box-shadow: 3px 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 3% 6%;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+.main::-webkit-scrollbar{
+    display: none;
+}
+.register{
+    position: relative;
+    width: 50vw;
+    padding-top: 130px;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+.register .top-Section{
+    position: absolute;
+    top: 5px;
+    /* right: 80px; */
+    left: 100px;
+    margin-bottom: 20px;
+}
+.register .form-one{
+    position: absolute;
+    transition: 1s;
+}
+.register .form-two{
+    position: absolute;
+    left: 50vw;
+    transition: 1s;
+
+}
+ 
+
+.register .top-Section>h2 {
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    font-family: roboto;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.register label {
+    display: block;
+    font-size: 20px;
+    margin: 10px 0px;
+    font-family: Open Sans;
+    font-weight: 400;
+    color: black;
+    font-family: kelvet;
+    
+}
+
+.register input[type="text"],
+.register select {
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-family:roboto;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 16px;
+    box-sizing: border-box;
+    /* outline: none; */
+}
+
+
+.register,
+.register .imporantsms {
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #666;
+}
+#dob{
+    width: 50%;
+    font-size: 20px;
+    margin: 0px 30px;
+    padding: 12px 15px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    border: 1px solid #ddd;
+}
+.register .gender {
+    font-family: Poppins;
+}
+
+fieldset{
+
+    display: flex;
+    flex-direction:row ;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    margin-bottom: 35px;
+}
+fieldset:hover{
+    box-shadow: 0px 1px 0px rgb(123, 9, 9);
+}
+fieldset legend{
+    font-size: 22px;
+    font-weight: 500;
+   
+}
+fieldset  p{
+    position: relative;
+    font-size: 19px;
+    margin: 12px;
+    align-items: center;
+}
+fieldset  p>input{
+    top: -100px;
+}
+.btn-top {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    /* background-color: #5ddeb5; */
+    justify-content: center;
+    width: 215px;
+    height: 41px;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+
+.btn-top button{
+    border: none;
+    outline: none;
+    margin: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 9px 18px;
+    font-weight: 700;
+    border-radius: 20px;
+    color: black;
+}
+.register .btn-top #btn1{
+    background: linear-gradient(to right,#ff105f,#ffad06);
+}
+
+p.sms {
+    color: red;
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+button {
+    margin: 15px;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#btn-submit{
+    margin: 20px 0px;
+    cursor: pointer;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 10px 12px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    background: linear-gradient(to right,#ff105f,#ffad06);
+}
+
+#btn-submit:hover{
+    background-color: rgb(35, 8, 243);
+    color: rgb(57, 209, 2);
+}
+ h1{
+    text-align:center;
+    font-size: 24px;
+    margin: 20px 0px;
+    font-family: sans-serif;
+    color: black;
+}
+
+
+
+.rollNumber{
+    font-weight: 900;
+    font-size:14px ;
+    color: rgb(215, 70, 22);
+}
+
+ .name{
+    font-weight: 900;
+}
+
+
+
+
+
+
+@media (max-width:800px){
+    .main{
+        width: 75vw;
+    }
+    #DOB{
+        width: 30vw;
+
+    }
+}
+
+@media (max-width:600px){
+    .register>h1{
+        font-size: 20px;
+    }
+}
+@media (max-width:430px){
+    .main{
+        width: 90vw;
+    }
+    #DOB{
+        width: 60vw;
+    }
+}

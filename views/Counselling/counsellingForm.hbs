@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Public/Styles/counselling.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="main">
+        <div class="register"> 
+            <div class="top-Section">
+                <h2>Counselling Form</h2>
+                <div class="btn-top">
+                    <button id="btn1" class="toggle-btn" onclick="jeepFun()">JEEP</button>
+                    <button  id="btn2" class="toggle-btn" onclick="passFun()">12th and 10th </button>
+                </div>
+
+            </div>
+            <form id="jeepForm" class="form-one" action="/Counselling" method="post">
+                <label>Student Name :</label>
+                <input type="text" id="name" placeholder="Applicant Name" name="studentName" required>
+                <label>Father Name :</label>
+                <input type="text" id="fname" placeholder="Father Name" name="fatherName" required>
+                <label>Mother Name :</label>
+                <input type="text" id="Mname" placeholder="Mother Name" name="motherName" required>
+                <label for="dob" >
+                    Date of Birth:
+                    <input type="date" id="dob" name="dob" required>
+                </label>
+                </label><br>
+                <label for="gender">
+                    <fieldset>
+                        <legend>Gender</legend>
+                        <p>
+                            Male <input type="radio" name="gender"  value="Male"> </p>
+                        <p>
+                            Female <input type="radio" name="gender" value="Female">
+                        </p>
+                        <p>
+                            Transgender <input type="radio" name="gender" value="Transgender">
+                        </p>
+                    </fieldset>
+                </label>
+                <label for="category">
+                    <fieldset>
+                        <legend>Category</legend>
+                        <p>
+                            General <input type="radio" name="category" value="General"> </p>
+                        <p>
+                            EWS <input type="radio" name="category" value="EWS">
+                        </p>
+                        <p>
+                            OBC <input type="radio" name="category" value="OBC">
+                        </p>
+                        <p>
+                            ST <input type="radio" name="category" value="ST"> </p>
+                        <p>
+                            SC <input type="radio" name="category" value="OBC">
+                        </p>
+                        <p>
+                            OBC <input type="radio" name="category" value="OBC">
+                        </p>
+                    </fieldset>
+                </label>
+
+                <label for="JeepRank">Jeep Rank :
+                <input type="text" id="rank" placeholder="Enter your Jeep Rank" name="jeep" required>
+                </label>
+                  <label for="Category:">
+                    Admission Year:
+                    <select class="category" name="year">
+                        <option value="null">Year</option>
+                        <option value="1st">1st</option>
+                        <option value="2nd">2nd</option>
+                    </select>
+                    </select>
+                </label>
+
+                <div class="choice">
+                <h1>Branch Choice</h1>
+                <label for="first" class="branch">
+                    <select class="year" name="firstChoice">
+                        <option value="null">First choice </option>
+                        <option value="IT">Information technology</option>
+                        <option value="CSE">Computer Science and Engineering</option>
+                        <option value="Auto Mobile">Auto Mobile</option>
+                        <option value="Mechanical">Mechanical Engineering</option>
+                        <option value="Electrical">Electrical Engineering</option>
+                        <option value="Electronics">Electronics</option>
+                        <option value="Civil">Civil</option>
+                    </select>
+                </label>
+                <label for="second" class="branch">
+                    <select class="year" name="secondChoice">
+                        <option value="null">Second choice </option>
+                        <option value="IT">Information technology</option>
+                        <option value="CSE">Computer Science and Engineering</option>
+                        <option value="Auto Mobile">Auto Mobile</option>
+                        <option value="Mechanical">Mechanical Engineering</option>
+                        <option value="Electrical">Electrical Engineering</option>
+                        <option value="Electronics">Electronics</option>
+                        <option value="Civil">Civil</option>
+                    </select>
+                </label>
+                <label for="third" class="branch">
+                    <select class="year" name="thirdChoice">
+                        <option value="null">Third choice </option>
+                         <option value="IT">Information technology</option>
+                        <option value="CSE">Computer Science and Engineering</option>
+                        <option value="Auto Mobile">Auto Mobile</option>
+                        <option value="Mechanical">Mechanical Engineering</option>
+                        <option value="Electrical">Electrical Engineering</option>
+                        <option value="Electronics">Electronics</option>
+                        <option value="Civil">Civil</option>
+                    </select>
+                </label>
+                <label for="fourth" class="branch">
+                    <select class="year" name="fourthChoice">
+                        <option value="null">Forth  choice </option>
+                         <option value="IT">Information technology</option>
+                        <option value="CSE">Computer Science and Engineering</option>
+                        <option value="Auto Mobile">Auto Mobile</option>
+                        <option value="Mechanical">Mechanical Engineering</option>
+                        <option value="Electrical">Electrical Engineering</option>
+                        <option value="Electronics">Electronics</option>
+                        <option value="Civil">Civil</option>
+                    </select>
+                </label>
+            </div>
+                <label for="state">
+                    State:
+                    <input type="text" id="State" placeholder="State Name" name="state" required>
+                </label>
+
+                <label for="district">
+                    District:
+                    <input type="text" id="district" placeholder="District Name" name="district" required>
+                </label>
+                <label for="pincode">
+                    Pincode:
+                    <input type="text" id="pincode" placeholder="Pin Code" name="pincode" required>
+                </label>
+
+                <label for="phone_number">
+                    Mobile Number
+                    <input type="text" id="phone_number" placeholder="Mobile Number" name="mobileNumber" required>
+                </label>
+                <label for="Aadhar_number" >
+                    Aadhar Number
+                    <input type="text" id="phone_number" placeholder="Mobile Number" name="aadharNumber" required>
+                </label>
+                <label for="emailaddress">
+                    Email Address:  
+                    <input type="text" id="email" class="emailaddress" placeholder="Enter a valid Email ID " name="email" required>
+                </label>
+            <div class="container">
+                <input type="submit" value="submit" id="btn-submit" >
+            </div>
+            </form>
+
+            <form  id="passForm"  class="form-two" action="/CounsellingPercentage" method="post">
+                <label>Student Name :</label>   
+                <input type="text" id="name" placeholder="Applicant Name" name="studentName" required>
+          
+                <label>Father Name :</label>
+                <input type="text" id="fname" placeholder="Father Name" name="fatherName" required>
+
+                <label>Mother Name :</label>
+                <input type="text" id="Mname" placeholder="Mother Name" name="motherName" required>
+
+                <label for="dob" >
+                    Date of Birth:
+                    <input type="date" id="dob" name="dob" required>
+                </label>
+
+                </label><br>
+               
+                <label for="gender" required>
+                    <fieldset>
+                        <legend>Gender</legend>
+                        <p>
+                            Male <input type="radio" name="gender"  value="Male"> </p>
+                        <p>
+                            Female <input type="radio" name="gender" value="Female">
+                        </p>
+                        <p>
+                            Transgender <input type="radio" name="gender" value="Transgender">
+                        </p>
+                    </fieldset>
+                </label>
+
+              
+
+                <label for="category">
+                    <fieldset>
+                        <legend>Category</legend>
+                        <p>
+                            General <input type="radio" name="category" value="General"> </p>
+                        <p>
+                            EWS <input type="radio" name="category" value="EWS">
+                        </p>
+                        <p>
+                            OBC <input type="radio" name="category" value="OBC">
+                        </p>
+                        <p>
+                            ST <input type="radio" name="category" value="ST"> </p>
+                        <p>
+                            SC <input type="radio" name="category" value="OBC">
+                        </p>
+                        <p>
+                            OBC <input type="radio" name="category" value="OBC">
+                        </p>
+                    </fieldset>
+                </label>
+
+                <label for="JeepRank">12% : 
+                <input type="text" id="rank12" placeholder="Enter your Jeep Rank" name="class12" required>
+                </label>
+                <label for="JeepRank">10% :
+                    <input type="text" id="rank10" placeholder="Enter your Jeep Rank" name="class10" required>
+                    </label>
+                  <label for="Category:">
+                    Admission Year:
+                    <select class="category" name="year">
+                        <option value="null">Year</option>
+                        <option value="1st">1st</option>
+                        <option value="2nd">2nd</option>
+                    </select>
+                    </select>
+                </label>
+
+                <div class="choice">
+                <h1>Branch Choice</h1>
+                <label for="first" class="branch">
+                    <select class="year" name="firstChoice">
+                        <option value="null">First choice </option>
+                        <option value="IT">Information technology</option>
+                        <option value="CSE">Computer Science and Engineering</option>
+                        <option value="Auto Mobile">Auto Mobile</option>
+                        <option value="Mechanical">Mechanical Engineering</option>
+                        <option value="Electrical">Electrical Engineering</option>
+                        <option value="Electronics">Electronics</option>
+                        <option value="Civil">Civil</option>
+                    </select>
+                </label>
+                <label for="second" class="branch">
+                    <select class="year" name="secondChoice">
+                        <option value="null">Second choice </option>
+                        <option value="IT">Information technology</option>
+                        <option value="CSE">Computer Science and Engineering</option>
+                        <option value="Auto Mobile">Auto Mobile</option>
+                        <option value="Mechanical">Mechanical Engineering</option>
+                        <option value="Electrical">Electrical Engineering</option>
+                        <option value="Electronics">Electronics</option>
+                        <option value="Civil">Civil</option>
+                    </select>
+                </label>
+                <label for="third" class="branch">
+                    <select class="year" name="thirdChoice">
+                        <option value="null">Third choice </option>
+                         <option value="IT">Information technology</option>
+                        <option value="CSE">Computer Science and Engineering</option>
+                        <option value="Auto Mobile">Auto Mobile</option>
+                        <option value="Mechanical">Mechanical Engineering</option>
+                        <option value="Electrical">Electrical Engineering</option>
+                        <option value="Electronics">Electronics</option>
+                        <option value="Civil">Civil</option>
+                    </select>
+                </label>
+                <label for="fourth" class="branch">
+                    <select class="year" name="fourthChoice">
+                        <option value="null">Forth  choice </option>
+                         <option value="IT">Information technology</option>
+                        <option value="CSE">Computer Science and Engineering</option>
+                        <option value="Auto Mobile">Auto Mobile</option>
+                        <option value="Mechanical">Mechanical Engineering</option>
+                        <option value="Electrical">Electrical Engineering</option>
+                        <option value="Electronics">Electronics</option>
+                        <option value="Civil">Civil</option>
+                    </select>
+                </label>
+            </div>
+
+
+                <label for="state">
+                    State:
+                    <input type="text" id="State" placeholder="State Name" name="state" required>
+                </label>
+
+                <label for="district">
+                    District:
+                    <input type="text" id="district" placeholder="District Name" name="district" required>
+                </label>
+
+                <label for="pincode">
+                    Pincode:
+                    <input type="text" id="pincode" placeholder="Pin Code" name="pincode" required>
+                </label>
+
+                <label for="phone_number">
+                    Mobile Number
+                    <input type="text" id="phone_number" placeholder="Mobile Number" name="mobileNumber" required>
+                </label>
+            <label for="Aadhar_number" >
+                Aadhar Number
+                <input type="text" id="phone_number" placeholder="Mobile Number" name="aadharNumber" required>
+            </label>
+            <label for="emailaddress">
+                Email Address:  
+                <input type="text" id="email" class="emailaddress" placeholder="Enter a valid Email ID " name="email" required>
+            </label>
+            <div class="container">
+                <input type="submit" value="submit" id="btn-submit" >
+            </div>
+            </form>
+
+
+        </div>
+
+
+    </div>
+</body>
+ <script src="/Public/Scripts/counselling.js"></script> 
+
+</script>
+
+</html>

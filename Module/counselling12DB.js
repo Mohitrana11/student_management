@@ -1,0 +1,87 @@
+const mongo = require('mongoose');
+mongo.connect('mongodb://0.0.0.0:27017/CollegeDB')
+const counsellingSchema = new mongo.Schema({
+    studentName:{
+        type:String,
+        required:true
+    },
+    fatherName:{
+        type:String,
+        required:true
+    },
+    motherName:{
+        type:String,
+        required:true
+    },
+    dob:{
+        type:String,
+        required:true
+    },
+    mobileNumber:{
+        type:String,
+        required:true,
+        unique:true
+    },
+    class12:{
+        type:Number,
+        required:true
+    },
+    class10:{
+        type:Number,
+        required:true
+    },
+    firstChoice:{
+        type:String,
+        required:true
+    },
+    secondChoice:{
+        type:String,
+        required:true
+    },
+    thirdChoice:{
+        type:String,
+        required:true
+    },
+    fourthChoice:{
+        type:String,
+        required:true
+    },
+    email:{
+        type:String,
+        required:true,
+        unique:true,
+    },
+    year:{
+        type:String,
+        required:true
+    },
+    gender:{
+        type:String,
+        required:true
+    },
+    category:{
+        type:String,
+        required:true
+    },
+    state:{
+        type:String,
+        required:true
+    },
+    district:{
+        type:String,
+        required:true
+    },
+    pincode:{
+        type:Number,
+        required:true
+    },
+    aadharNumber:{
+        type:String,
+        require:true,
+        unique:true
+    }
+})
+
+
+const collection = mongo.model('counselling12DB',counsellingSchema);
+module.exports = collection;
