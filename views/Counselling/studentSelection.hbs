@@ -9,7 +9,8 @@
     <table>
         <thead>
             <tr>
-                <th >jeep Rank.</th>
+                <th >class 10</th>
+                <th >class 12</th>
                 <th>Student Name</th>
                 <th>Father Name</th>
                 <th>Mother Name</th>
@@ -26,14 +27,13 @@
                 <th>State</th>
                 <th>District</th>
                 <th>Pin Code</th>
-                <th>Selected for</th>
-                <th>Delete</th>
             </tr>
         </thead>
         <tbody>
             {{#each items}}
             <tr>
-                <td class="rank">{{this.jeep}}</td>
+                <td class="rank">{{this.class10}}</td>
+                <td class="rank">{{this.class12}}</td>
                 <td class="name">{{this.studentName}}</td>
                 <td>{{this.fatherName}}</td>
                 <td>{{this.motherName}}</td>
@@ -50,31 +50,7 @@
                 <td>{{this.state}}</td>
                 <td>{{this.district}}</td>
                 <td>{{this.pincode}}</td>
-                <td>
-                    <form action="/selectedStudent">
-                        <label for="branch">
-                            <select class="barnch" name="branch">
-                                <option value="IT">IT</option>
-                                <option value="CSE">CSE</option>
-                                <option value="Auto Mobile">AM</option>
-                                <option value="Mechanical">ME</option>
-                                <option value="Electrical">EE</option>
-                                <option value="Electronics">Electronics</option>
-                                <option value="Civil">Civil</option>
-                            </select>
-                        </label>
-                        <div class="container">
-                            <button  id="btn-submit" >OK</button>
-                        </div>
-                    </form>
-                </td>
-                <td>
-                    <form action="/deletedStudent">
-                        <div class="container">
-                            <button  id="btn-delete" >Delete</button>
-                        </div>
-                    </form>
-                </td>
+                
             </tr>
             {{/each}}
         </tbody>

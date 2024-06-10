@@ -103,7 +103,11 @@ app.get('/showStudentDetails', async (req, res) => {
     res.render('StudentRegistration/showStudentDetails', { items });
 });
 
+// Available Sheets:------------------------------------------------[Start]--
 
+app.get('/available',(req,res)=>{
+  res.render('HomePages/availableSheet');
+})
 
 // Counselling-----------------------------------------------------[Start]---
 const counsellingSt = require('./Routes/CounsellingDB');
@@ -128,14 +132,13 @@ app.get('/showCounselling', async (req, resp) => {
 const counsellingTenthStudent =require('./Module/counselling12DB');
 
 app.get('/studentSelection10', async (req, resp) => {
-    const items = await counsellingTenthStudent.find({class10:req.body.class10}).sort({ "jeep":1});
+    const items = await counsellingTenthStudent.find({}).sort({ "class10":1});
     resp.render('Counselling/studentSelection', { items });
 });
 
-app.get('/studentSelection', async (req, resp) => {
+app.get('/studentSelection12', async (req, resp) => {
   // const items = await counsellingDB.find({"class10":req.class10}).sort({ "jeep":1});
-  const items = await counsellingTenthStudent.find({}).sort({ "jeep":1});
-
+  const items = await counsellingTenthStudent.find({}).sort({ "class12":1});
   resp.render('Counselling/studentSelection', { items });
 });
 
@@ -221,7 +224,7 @@ app.get('/export-counselling', async (req, res) => {
       console.error(err);
       res.status(500).send('An error occurred while exporting the data');
     }
-  });
+});
 
 app.get('/export-counselling12', async (req, res) => {
     try {
@@ -272,7 +275,7 @@ app.get('/export-counselling12', async (req, res) => {
       console.error(err);
       res.status(500).send('An error occurred while exporting the data');
     }
-  });
+});
 
 app.get('/export-counselling10', async (req, res) => {
   try {
@@ -300,7 +303,7 @@ app.get('/export-counselling10', async (req, res) => {
       { header: 'State', key: 'state', width: 20 },
       { header: 'District', key: 'district', width: 24 },
       { header: 'Pincode', key: 'pincode', width: 8 },
-    ];
+  ];
 
     // Add rows
     worksheet.addRows(users);

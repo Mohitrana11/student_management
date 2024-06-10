@@ -11,12 +11,6 @@ function passFun(){
     x.style.left = "-50vw";
     y.style.left="0px";
 }
-
-
-
-
-
-
 function validateForm() {
     e.preventDefault();
     let errors = [];
